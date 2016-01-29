@@ -1,7 +1,20 @@
-html{
+@import "compass";
+//@import "compass/reset";
+@import "susy";
 
-  h2{
-    background: red;
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";
 
-  }
+body {
+  background: darken($green,20);
+
+  color: lighten($darkblue, 10);
+
 }
+
+
+
+

@@ -15,7 +15,7 @@ gulp.task('compass', function () {
         .pipe(compass({
             css: 'Development/css',
             sass: 'Component/sass',
-        }))
+        }).on('error',gutil.log))
         .pipe(connect.reload());
 });
 
